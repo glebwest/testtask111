@@ -14,7 +14,7 @@ if ($this->order) {
   }
   else
   {
-    $order = 'ASC';
+    $order = 'DESC';
   }
 } else {
   $idOrd = false;
