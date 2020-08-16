@@ -12,6 +12,10 @@ if ($this->order) {
   {
     $order = 'ASC';
   }
+  else
+  {
+    $order = 'ASC';
+  }
 } else {
   $idOrd = false;
   $order = 'DESC';
