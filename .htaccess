@@ -1,0 +1,14 @@
+DirectoryIndex public/index.php
+
+<IfModule mod_setenvif.c>
+	SetEnv TZ Europe/Moscow
+</IfModule>
+ServerSignature Off
+AddDefaultCharset UTF-8
+
+RewriteRule ^/.htaccess$ - [G]
+
+RewriteEngine On
+
+RewriteRule ^([a-z]+)$ public/index.php?view=$1 [L]
+RewriteRule ^([a-z]+)/([0-9]+)$ public/index.php?view=$1&pagg=$2 [L]
