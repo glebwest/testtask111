@@ -10,6 +10,11 @@
 <body>
 
 
+<div class="feedback">
+<h3>Успех!</h3>
+<p>Задача успешно добавлена</p>
+</div>
+
 <nav class="navbar navbar-dark bg-dark">
     <div class="container">
 

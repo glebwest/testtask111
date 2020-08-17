@@ -69,7 +69,19 @@ loginForm.addEventListener('submit',(e)=>{
         console.log(ans)
         if (ans.status === 1)
         {
-            window.location = '/'
+            if (loginForm.dataset.method == 'newTask')
+            {
+                spin.classList.remove('active')
+                let feedback = document.querySelector('.feedback')
+                feedback.classList.add('active')
+                setTimeout(() => {
+                    window.location = '/'
+                }, 3000);
+            }
+            else
+            {
+                window.location = '/'
+            }
         }
         else
         {
